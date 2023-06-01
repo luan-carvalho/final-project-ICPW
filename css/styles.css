@@ -5,3 +5,24 @@ body {
 header {
     text-align: center;
 }
+
+.fancy-text {
+    color: #23130C;
+}
+
+.nav-bar {
+    list-style: none;
+}
+
+.nav-bar li {
+    margin:10px;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar li a:hover {
+    color: green;
+}
