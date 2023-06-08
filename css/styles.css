@@ -1,17 +1,18 @@
 body {
-    background-color: #FDCA14;
+    background-color: #FED651;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
 }
 
 header {
     text-align: center;
 }
 
-.fancy-text {
-    color: #23130C;
-}
-
 .nav-bar {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-bar li {
@@ -21,8 +22,25 @@ header {
 .nav-bar li a {
     text-decoration: none;
     color: black;
+    padding: 5px;
+    
 }
 
 .nav-bar li a:hover {
-    color: green;
+    border-radius: 5%;
+    padding: 5px;
+    border-bottom: red solid;
+}
+
+.welcome p {
+    font-size: 22px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu-item {
+    height: auto;
+    width: 50%;
 }
