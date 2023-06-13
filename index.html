@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       rel="icon"
       type="image/x-icon"
       href="./resources
@@ -16,16 +23,14 @@
   </head>
   <body>
     <header>
-
-      <div>
-        <img
-          src="./resources/icons/logo.png"
-          alt="https://www.instagram.com/tche_burger/"
-        />
-      </div>
-
       <nav>
-        <ul class="nav-bar">
+        <div class="logo">
+          <img
+            src="./resources/icons/logo.png"
+            alt="https://www.instagram.com/tche_burger/"
+          />
+        </div>
+        <ul class="links">
           <li><a href="#menu">Cardápio</a></li>
           <li>
             <a
@@ -43,28 +48,42 @@
             <a href="#ratings">Avaliações</a>
           </li>
         </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
+
+      <div class="dropdown-menu">
+        <li><a href="#menu">Cardápio</a></li>
+        <li>
+          <a
+            href="https://tonolucro.delivery/palmas/tche-lanches"
+            target="_blank"
+            >Tonolucro</a
+          >
+        </li>
+        <li>
+          <a href="https://wa.link/ukmyps" target="_blank"
+            >Pedir pelo Whatsapp</a
+          >
+        </li>
+        <li>
+          <a href="#ratings">Avaliações</a>
+        </li>
+      </div>
     </header>
 
-    <main>
-      <section id="welcome">
-        <img src="./resources/banner.jpg" alt="" />
-      </section>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn');
+      const toggleBtnIcon = document.querySelector('.toggle_btn i');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
 
-      <section id="menu">
+      toggleBtn.onclick = function () {
+        dropdownMenu.classList.toggle('open');
+        const isOpen = dropdownMenu.classList.contains('open')
 
-        <div class = "container">
-      
-
-
-        </div>
-
-
-      </section>
-
-      <section id="ratings">
-
-      </section>
-    </main>
+        toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+      }
+    </script>
   </body>
 </html>
