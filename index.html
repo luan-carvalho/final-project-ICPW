@@ -73,17 +73,50 @@
       </div>
     </header>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-house"></i> 102 Sul Avenida LO 3, 170 -
+                Plano Diretor Sul
+              </li>
+              <li><i class="fa-solid fa-phone"></i> (63) 3215-3368</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Siga-nos</h4>
+            <div class="social-links">
+              <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Made by Luan Carvalho</h4>
+            <div class="social-links">
+              <a href="https://github.com/luan-carvalho" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href=""><i class="fa-brands fa-github" target="_blank"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script>
-      const toggleBtn = document.querySelector('.toggle_btn');
-      const toggleBtnIcon = document.querySelector('.toggle_btn i');
-      const dropdownMenu = document.querySelector('.dropdown-menu');
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropdownMenu = document.querySelector(".dropdown-menu");
 
       toggleBtn.onclick = function () {
-        dropdownMenu.classList.toggle('open');
-        const isOpen = dropdownMenu.classList.contains('open')
+        dropdownMenu.classList.toggle("open");
+        const isOpen = dropdownMenu.classList.contains("open");
 
-        toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
-      }
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
     </script>
   </body>
 </html>
