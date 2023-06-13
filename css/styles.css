@@ -15,6 +15,7 @@ body {
 header {
   position: relative;
   padding: 0 2rem;
+  height: 350px;
 }
 
 nav {
@@ -164,6 +165,110 @@ footer .container {
    
 
 }
+
+.ratings {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+
+}
+
+.ratings .heading {
+  display: inline;
+  position: relative;
+  color: #fed651;
+  font-size: 4vw;
+  padding: 60px;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+}
+
+.ratings .heading b {
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wrapper .testimonial-container {
+  position: relative;
+  width: 350px;
+  color: white;
+  background-color: #222;
+  margin: 40px 20px;
+  padding: 30px 20px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+
+}
+
+.wrapper .testimonial-container .profile {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10%;
+  width: 100%;
+  display: block;
+}
+
+.wrapper .testimonial-container .profile .imgbox {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border: 8px solid #070c0d;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.wrapper .testimonial-container .profile .imgbox img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.wrapper .testimonial-container .profile h2 {
+  padding: 5px 0;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.wrapper .testimonial-container p {
+  margin-top: 50px;
+  color: white;
+  padding: 0 8px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.wrapper .testimonial-container .left {
+  font-size: 30px;
+  display: block;
+  text-align: left;
+  color: #3b7cf5;
+}
+
+.wrapper .testimonial-container .right {
+  font-size: 30px;
+  display: block;
+  text-align: right;
+  color: #3b7cf5;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 992px) {
