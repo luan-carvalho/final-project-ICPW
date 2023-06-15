@@ -44,8 +44,8 @@ nav .toggle_btn {
 }
 
 .links li a:hover {
-  border-bottom: 2px red solid;
-  border-radius: 3px;
+  border-bottom: 1px red solid;
+  border-radius: 0.5px;
 }
 
 nav ul li {
